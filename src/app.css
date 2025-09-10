@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Body without gradient background */
+body {
+  @apply text-gray-900;
+}
+
+/* Smooth card shadow & transition */
+.card {
+  @apply bg-white bg-opacity-80 shadow-lg rounded-xl p-6 mb-6 transition-transform transform hover:scale-105;
+}
+
+/* Button hover effect */
+.button {
+  @apply bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white font-bold py-2 px-4 rounded shadow hover:scale-105 transition-transform;
+}
+
+/* Input field style */
+.input {
+  @apply p-2 border border-gray-300 rounded w-full;
+}
